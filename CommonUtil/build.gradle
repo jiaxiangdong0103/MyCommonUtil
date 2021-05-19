@@ -2,8 +2,10 @@ apply from: '../config.gradle'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+
 apply plugin: 'com.github.dcendents.android-maven'
 group='jiaxiangdong0103'
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
