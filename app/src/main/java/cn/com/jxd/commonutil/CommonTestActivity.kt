@@ -17,6 +17,7 @@ class CommonTestActivity : BaseViewBindingActivity<CommonTestActivityBinding>() 
         mViewBinding.tvTest.setOnClickListener {
 
         }
+
     }
 
 }
