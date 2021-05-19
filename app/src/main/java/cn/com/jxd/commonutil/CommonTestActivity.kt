@@ -15,7 +15,6 @@ class CommonTestActivity : BaseViewBindingActivity<CommonTestActivityBinding>() 
 
     override fun initData() {
         mViewBinding.tvTest.setOnClickListener {
-
         }
 
     }

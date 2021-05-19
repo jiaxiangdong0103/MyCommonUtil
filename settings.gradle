@@ -1,2 +1,3 @@
+include ':CommonUtil'
 include ':app'
 rootProject.name = "MyCommonUtil"
