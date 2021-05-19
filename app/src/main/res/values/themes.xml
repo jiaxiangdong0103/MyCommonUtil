@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyCommonUtil" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item><!--应用程式的主要品牌色彩-->
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item><!--在浅色主题中的colorPrimary和深色主题中的colorSurface之间切换-->
+        <item name="colorOnPrimary">@color/colorAccent</item><!---->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimary</item><!--应用程式的次要品牌色彩，通常是主要品牌色彩的明亮补充-->
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item><!--您的次要品牌颜色的较浅/较深变体，在主题中很少使用-->
+        <item name="colorOnSecondary">@color/ptb_000000</item><!--用于显示在辅助颜色顶部的元素的颜色-->
+
+        <item name="android:colorBackground">@color/ptb_ffffff</item><!--所有其他屏幕内容后面的颜色-->
+        <item name="android:textColor">@color/ptb_000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
