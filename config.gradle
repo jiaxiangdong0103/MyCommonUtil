@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 ext {
-    applicationId = 'cn.com.jxd.practice'
+    applicationId = 'cn.com.jxd.mycommonutil'
 
     versionName = 'testDesc'
     versionCode = 1

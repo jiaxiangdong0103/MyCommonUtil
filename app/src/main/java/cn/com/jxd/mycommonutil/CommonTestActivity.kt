@@ -1,6 +1,7 @@
-package cn.com.jxd.commonutil
-import cn.com.jxd.commonutil.databinding.CommonTestActivityBinding
+package cn.com.jxd.mycommonutil
+import cn.com.jxd.commonutil.log.LogUtils
 import cn.com.jxd.commonutil.ui.BaseViewBindingActivity
+import cn.com.jxd.mycommonutil.databinding.CommonTestActivityBinding
 
 /**
  * @author xiangdong.jia
@@ -15,6 +16,7 @@ class CommonTestActivity : BaseViewBindingActivity<CommonTestActivityBinding>() 
 
     override fun initData() {
         mViewBinding.tvTest.setOnClickListener {
+            LogUtils.d("这是一个点击事件")
         }
 
     }
