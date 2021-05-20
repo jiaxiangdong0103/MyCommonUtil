@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 apply plugin: 'com.github.dcendents.android-maven'
-group='jiaxiangdong0103'
+group='jiaxiangdong0103' //这个是你的github用户名
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
