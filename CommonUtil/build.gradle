@@ -11,7 +11,7 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 group='jiaxiangdong0103' //这个是你的github用户名
-version = 'v1.0.1'
+version = 'v1.0.4'
 
 
 android {
@@ -51,7 +51,8 @@ android {
         enabled = true
     }
     sourceSets {
-        main.java.srcDirs += 'src/main/cn.com.jxd.commonutil'
+        main.java.srcDirs += 'src/main'
+        main.resources.srcDirs += 'src/resources'
     }
 }
 
