@@ -4,12 +4,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 apply plugin: 'com.github.dcendents.android-maven'
-repositories {
-    mavenCentral()
-    google()
-    jcenter()
-    maven { url "https://jitpack.io" }
-}
 group='jiaxiangdong0103' //这个是你的github用户名
 version = 'v1.0.4'
 
@@ -50,10 +44,6 @@ android {
     viewBinding {
         enabled = true
     }
-    sourceSets {
-        main.java.srcDirs += 'src/main'
-        main.resources.srcDirs += 'src/resources'
-    }
 }
 
 dependencies {
@@ -75,27 +65,4 @@ dependencies {
     api rootProject.ext.compilelibs['annotation']
     kapt rootProject.ext.compilelibs['arouter-compiler']
 
-}
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from android.sourceSets.main.java.sourceFiles
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.sourceFiles
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-task classesJar(type: Jar) {
-    from "$buildDir/intermediates/classes/release"
-}
-
-artifacts {
-    archives classesJar
-    archives javadocJar
-    archives sourcesJar
 }
