@@ -50,6 +50,9 @@ android {
     viewBinding {
         enabled = true
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/cn.com.jxd.commonutil'
+    }
 }
 
 dependencies {
@@ -68,6 +71,7 @@ dependencies {
     api rootProject.ext.compilelibs["arouter"]
     api rootProject.ext.compilelibs["fragment-ktx"]
     api rootProject.ext.compilelibs['MMKV']
+    api rootProject.ext.compilelibs['annotation']
     kapt rootProject.ext.compilelibs['arouter-compiler']
 
 }

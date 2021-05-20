@@ -531,7 +531,7 @@ public class RoundedImageView extends AppCompatImageView {
      * Return true if this view should be oval and always set corner radii to half the height or
      * width.
      *
-     * @return if this {@link com.sy.library.util.image.RoundedImageView} is set to oval.
+     * @return if this {@link RoundedImageView} is set to oval.
      */
     public boolean isOval() {
         return mIsOval;
@@ -541,7 +541,7 @@ public class RoundedImageView extends AppCompatImageView {
      * Set if the drawable should ignore the corner radii set and always round the source to
      * exactly half the height or width.
      *
-     * @param oval if this {@link com.sy.library.util.image.RoundedImageView} should be oval.
+     * @param oval if this {@link RoundedImageView} should be oval.
      */
     public void setOval(boolean oval) {
         mIsOval = oval;
