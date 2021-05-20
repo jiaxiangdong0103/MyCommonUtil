@@ -1,6 +1,5 @@
 package cn.com.jxd.commonutil.db
 
-import cn.com.jxd.base.db.CacheStorage
 import com.tencent.mmkv.MMKV
 
 /**

@@ -1,4 +1,4 @@
-package cn.com.jxd.base.db
+package cn.com.jxd.commonutil.db
 
 import android.content.Context
 import com.tencent.mmkv.MMKV
