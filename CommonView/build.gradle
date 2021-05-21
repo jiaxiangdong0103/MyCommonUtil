@@ -1,24 +1,24 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-}
+apply from: '../config.gradle'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.github.dcendents.android-maven'
+group='jiaxiangdong0103' //这个是你的github用户名
+
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId rootProject.ext.applicationId
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
-        //解决65536问题
-        multiDexEnabled true
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
+        consumerProguardFiles "consumer-rules.pro"
         //这个是使用 Arouter必须加的
         kapt {
             arguments {
@@ -46,6 +46,12 @@ android {
 }
 
 dependencies {
-    implementation project(':CommonUtil')
-    implementation project(':CommonView')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
