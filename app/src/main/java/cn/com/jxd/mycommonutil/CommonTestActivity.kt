@@ -1,8 +1,10 @@
 package cn.com.jxd.mycommonutil
+import cn.com.jxd.commonutil.common.CommonPermissionUtil
 import cn.com.jxd.commonutil.log.LogUtils
 import cn.com.jxd.commonutil.ui.BaseViewBindingActivity
-import cn.com.jxd.commonview.TestView
+import cn.com.jxd.commonutil.utils.SYPermissionUtils
 import cn.com.jxd.mycommonutil.databinding.CommonTestActivityBinding
+import com.yanzhenjie.permission.runtime.Permission
 
 /**
  * @author xiangdong.jia
@@ -18,7 +20,9 @@ class CommonTestActivity : BaseViewBindingActivity<CommonTestActivityBinding>() 
     override fun initData() {
         mViewBinding.tvTest.setOnClickListener {
             LogUtils.d("这是一个点击事件")
-            TestView.getTestView()
+            CommonPermissionUtil.checkStoragePermission(this){
+
+            }
         }
 
     }

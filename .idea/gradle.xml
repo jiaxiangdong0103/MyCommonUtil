@@ -13,7 +13,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CommonUtil" />
-            <option value="$PROJECT_DIR$/CommonView" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
@@ -21,6 +20,5 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
-    <option name="offlineMode" value="true" />
   </component>
 </project>

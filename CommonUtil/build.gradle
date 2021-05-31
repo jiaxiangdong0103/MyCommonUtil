@@ -62,6 +62,8 @@ dependencies {
     api rootProject.ext.compilelibs["fragment-ktx"]
     api rootProject.ext.compilelibs['MMKV']
     api rootProject.ext.compilelibs['annotation']
+    api rootProject.ext.compilelibs['permission']
     kapt rootProject.ext.compilelibs['arouter-compiler']
+
 
 }

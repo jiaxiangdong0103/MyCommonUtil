@@ -10,11 +10,15 @@ import androidx.annotation.Nullable
  */
 class LogUtils {
     companion object {
+        fun e(@Nullable value: Any) {
+            Log.e("error", "$value")
+        }
         fun j(@Nullable value: Any) {
             Log.e("jia ${Thread.currentThread().name}", "$value")
         }
         fun d(@Nullable value: Any) {
             Log.e("jia ${Thread.currentThread().name}", "$value")
         }
+
     }
 }

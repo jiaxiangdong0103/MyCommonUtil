@@ -47,5 +47,4 @@ android {
 
 dependencies {
     implementation project(':CommonUtil')
-    implementation project(':CommonView')
 }

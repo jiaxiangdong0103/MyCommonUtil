@@ -37,5 +37,7 @@ ext {
 
             //存储相关 https://github.com/Tencent/MMKV
             "MMKV"                  : 'com.tencent:mmkv-static:1.2.8',
+            //权限
+            "permission"            : "com.yanzhenjie:permission:2.0.3",
     ]
 }
