@@ -1,14 +1,9 @@
 package cn.com.jxd.commonutil.common
 
 import android.content.Context
-import android.os.Build
-import androidx.annotation.RequiresApi
-import cn.com.jxd.commonutil.log.LogUtils
 import cn.com.jxd.commonutil.utils.SYPermissionUtils
 import cn.com.jxd.commonutil.utils.ToastUtils
-import com.airbnb.lottie.utils.Utils
 import com.yanzhenjie.permission.runtime.Permission
-import java.util.function.Consumer
 
 /**
  * @author xiangdong.jia
