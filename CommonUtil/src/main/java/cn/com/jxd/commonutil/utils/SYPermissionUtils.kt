@@ -14,28 +14,45 @@ class SYPermissionUtils {
     companion object {
         fun builder(context: Context) = Builder(context)
     }
-
     class Builder(private val context: Context) {
 
         private var mPermission: Array<String>? = null
         private var granted: (() -> Unit)? = null
         private var denied: (() -> Unit)? = null
 
+        /**
+         * 传入你要判断的权限
+         * @param permission Array<out String>
+         * @return Builder
+         */
         fun permission(@PermissionDef vararg permission: String): Builder {
             mPermission = arrayOf(*permission)
             return this
         }
 
+        /**
+         * 成功取得权限后的回调
+         * @param granted Function0<Unit>
+         * @return Builder
+         */
         fun onGranted(granted: (() -> Unit)): Builder {
             this.granted = granted
             return this
         }
 
+        /**
+         * 拒绝授权权限后的回调
+         * @param denied Function0<Unit>
+         * @return Builder
+         */
         fun onDenied(denied: (() -> Unit)): Builder {
             this.denied = denied
             return this
         }
 
+        /**
+         * 开始执行
+         */
         fun start() {
             if (mPermission == null) {
                 LogUtils.e("请使用permission()设置权限")
@@ -56,6 +73,16 @@ class SYPermissionUtils {
                     denied?.invoke()
                 }
                 .start()
+        }
+
+        private var mValue : Array<String>? = null
+        fun kotlin(vararg value: String) {
+            mValue = arrayOf(*value)
+
+            mValue?.let {
+                Test.java(*it)
+            }
+
         }
 
     }

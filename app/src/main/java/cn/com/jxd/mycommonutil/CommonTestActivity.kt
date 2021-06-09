@@ -21,7 +21,9 @@ class CommonTestActivity : BaseViewBindingActivity<CommonTestActivityBinding>() 
         mViewBinding.tvTest.setOnClickListener {
             LogUtils.d("这是一个点击事件")
             CommonPermissionUtil.checkStoragePermission(this){
-
+                if(it){//授权成功
+                    // 这里写后续的逻辑
+                }
             }
         }
 

@@ -7,7 +7,7 @@ import com.yanzhenjie.permission.runtime.Permission
 
 /**
  * @author xiangdong.jia
- * @description:
+ * @description: 一些常用的权限判断
  * @date :2021/5/31 下午4:58
  */
 object CommonPermissionUtil {

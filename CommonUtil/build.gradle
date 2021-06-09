@@ -63,6 +63,8 @@ dependencies {
     api rootProject.ext.compilelibs['MMKV']
     api rootProject.ext.compilelibs['annotation']
     api rootProject.ext.compilelibs['permission']
+    api rootProject.ext.compilelibs['glide']
+    api rootProject.ext.compilelibs['glideAnnotationProcessor']
     kapt rootProject.ext.compilelibs['arouter-compiler']
 
 
