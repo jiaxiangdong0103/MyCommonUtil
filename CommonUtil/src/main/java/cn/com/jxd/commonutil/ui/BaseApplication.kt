@@ -3,6 +3,7 @@ package cn.com.jxd.commonutil.ui
 import android.app.Application
 import cn.com.jxd.commonutil.db.CacheStorage
 import com.alibaba.android.arouter.launcher.ARouter
+import org.litepal.LitePal
 
 /**
  * @author xiangdong.jia
@@ -23,6 +24,7 @@ class BaseApplication : Application() {
         ARouter.openDebug()
         ARouter.init(this)
         CacheStorage.init(this)
+        LitePal.initialize(this)
     }
 
 }
